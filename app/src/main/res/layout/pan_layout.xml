@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_pan"
+    android:layout_width="wrap_content"
+    android:layout_height="260dp"
+    android:background="@drawable/index_background"
+   android:gravity="center_horizontal"
+    android:layout_marginTop="50dp">
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/game_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/music"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fragment"
+        android:layout_marginTop="45dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/game_disc" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/game_disc_light" />
+
+
+        <ImageButton
+            android:id="@+id/btn_play_start"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:background="@drawable/paly_button_icon" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="110dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="175dp"
+            android:src="@drawable/index_pin" />
+    </FrameLayout>
+</RelativeLayout>
